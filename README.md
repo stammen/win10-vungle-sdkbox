@@ -5,6 +5,8 @@ This GitHub repo implements a [SDKBOX](http://www.sdkbox.com/) style plugin for 
 Please note that this plugin is not integrated into the SDKBOX system so you will need to manually add it to your Cocos2d-x Windows 10 UWP app project following the instructions below.
 Future versions of this plugin may automate part of the installation process.
 
+This plugin implements the same API as the [SDKBOX Vungle plugin](http://docs.sdkbox.com/en/plugins/vungle/v3-cpp/) with a few minor changes to accomodate the Windows 10 UWP app framework.
+
 ##Vungle Demo Setup##
 
 In order to learn how to integrate the Vungle plugin into your Windows 10 UWP Cocos2d-x app, it is recommended that you first go through the steps to create a demo app.
@@ -17,7 +19,7 @@ In order to learn how to integrate the Vungle plugin into your Windows 10 UWP Co
 	$ cocos new vungleDemo -l cpp -d projects
     ```
 
-1. Download the [Vungle Windows SDK](https://v.vungle.com/sdk). Unzip the SDK and put the folder in your app Project folder.
+1. Download the [Vungle Windows SDK](https://v.vungle.com/sdk). Unzip the SDK and put the folder in your vungleDemo Project folder.
 
 1. Open the Windows 10 UWP vungleDemo solution in your project's proj.win10 folder.
 
@@ -59,3 +61,33 @@ Click the **Add** button to add a reference to the Vungle SDK.
 1. When the menu items turn green, click on the **Play Vungle Ad** menu item. If the menu items are red, then the Vungle SDK is not ready to play an ad.
 
 	![Vungle Ad](Images/ad.png "Vungle Demo Ad")
+    
+1. For an example on how to use the Windows 10 UWP Vungle plugin in your app, take a look at the following files:
+ 
+* [HelloWorldScene.cpp](https://github.com/stammen/win10-vungle-sdkbox/blob/master/Classes/HelloWorldScene.cpp)
+* [HelloWorldScene.h](https://github.com/stammen/win10-vungle-sdkbox/blob/master/Classes/HelloWorldScene.h) 
+
+##Adding Your Vungle App Id##
+
+1. The vungleDemo uses the Vungle test app id. In order to specify your Vungle app id, you need to open the **vungle.json** file in the **Resources/sdkbox/** folder. 
+Add your Vungle app id to the "id" field (currently set to "vungleTest"). The JSON format is similar to the one used by the iOS and Android Vungle plugins.
+
+    ```json
+    {
+      "Vungle" :
+      {
+          "id":"vungleTest",
+          "ads":{
+              "video":{
+                "sound" : true
+              },
+              "reward":{
+                 "sound" : true,
+                 "incentivized" : true
+              }
+          }
+      }
+    }
+    ```json
+
+
