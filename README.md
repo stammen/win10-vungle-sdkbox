@@ -88,6 +88,6 @@ Add your Vungle app id to the "id" field (currently set to "vungleTest"). The JS
           }
       }
     }
-    ```json
+    ```
 
 
