@@ -5,7 +5,7 @@ This GitHub repo implements a [SDKBOX](http://www.sdkbox.com/) style plugin for 
 Please note that this plugin is not integrated into the SDKBOX system so you will need to manually add it to your Cocos2d-x Windows 10 UWP app project following the instructions below.
 Future versions of this plugin may automate part of the installation process.
 
-This plugin implements the same API as the [SDKBOX Vungle plugin](http://docs.sdkbox.com/en/plugins/vungle/v3-cpp/) with a few minor changes to accomodate the Windows 10 UWP app framework.
+This plugin implements the same API as the [SDKBOX Vungle plugin](http://docs.sdkbox.com/en/plugins/vungle/v3-cpp/) with a few minor changes to accommodate the Windows 10 UWP app framework.
 
 ##Vungle Demo Setup##
 
