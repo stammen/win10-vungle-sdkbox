@@ -233,6 +233,7 @@ void Vungle::Diagnostic(Platform::Object ^sender, DiagnosticLogEvent^ e)
 	if (mDebugMode)
 	{
 		OutputDebugStringW(e->Message->Data());
+		OutputDebugStringW(L"\n");
 	}
 }
 
