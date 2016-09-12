@@ -1,0 +1,16 @@
+{
+  "WinRT": {
+    "Vungle": {
+      "id": "vungleTest",
+      "ads": {
+        "video": {
+          "sound": true
+        },
+        "reward": {
+          "sound": true,
+          "incentivized": true
+        }
+      }
+    }
+  }
+}

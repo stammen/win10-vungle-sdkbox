@@ -110,10 +110,11 @@ Vungle::Vungle()
 // throws Platform::Exception if error
 void Vungle::LoadJson()
 {
-	std::string s = FileUtils::getInstance()->getStringFromFile(FileUtils::getInstance()->fullPathForFilename("sdkbox/vungle.json"));
+	std::string s = FileUtils::getInstance()->getStringFromFile(FileUtils::getInstance()->fullPathForFilename("sdkbox_config.json"));
 	Platform::String^ jsonData = stringToPlatformString(s);
 	JsonValue^ root = JsonValue::Parse(jsonData);
-	JsonObject^ vungleObject = root->GetObject()->GetNamedObject("Vungle");
+	JsonObject^ winrtObject = root->GetObject()->GetNamedObject("WinRT");
+	JsonObject^ vungleObject = winrtObject->GetObject()->GetNamedObject("Vungle");
 	mVungleAppId = vungleObject->GetNamedString("id");
 	JsonObject^ ads = vungleObject->GetNamedObject("ads");
 
