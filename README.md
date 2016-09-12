@@ -42,9 +42,8 @@ Click the **Add** button to add a reference to the Vungle SDK.
 
 	![Add reference complete](Images/add-reference-complete.png "Add reference complete")
 
-1. Copy the files in this repo's Resource folder into your project's Resource folder.
-
-	![Copy Resources files](Images/resources.png "Copy Resources files")
+1. Copy the sdkbox_config.json file in this repo's Resource folder into your project's Resource folder. 
+If you already have a sdkbox_config.json for other platforms, copy the WinRT section into your sdkbox_config.json file.
 
 1. Copy the files in this repo's Classes folder into your project's Classes folder.
 
