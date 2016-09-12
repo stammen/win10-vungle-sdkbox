@@ -17,9 +17,7 @@ In order to learn how to integrate the Vungle plugin into your Windows 10 UWP Co
 
 #### Create a new Cocos2d-x project ####
 
-    ```
 	$ cocos new vungleDemo -l cpp -d projects
-    ```
 
 Download the [Vungle Windows SDK](https://v.vungle.com/sdk). Unzip the SDK and put the folder in your vungleDemo Project folder.
 
