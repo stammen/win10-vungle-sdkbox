@@ -11,6 +11,7 @@ Resources/HelloWorld.png
 Resources/fonts/
 Resources/res/
 vungle-windows-sdk-*.*.*/
+Classes/AppDelegate.*
 
 # Ignore files build by Visual Studio
 *.obj
