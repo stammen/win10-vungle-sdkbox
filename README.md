@@ -14,8 +14,6 @@ In order to learn how to integrate the Vungle plugin into your Windows 10 UWP Co
 
 #### Download or clone this repo ####
 
-![](Images/open-project.png "")
-
 
 #### Create a new Cocos2d-x project ####
 
