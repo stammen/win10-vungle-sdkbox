@@ -10,6 +10,7 @@ Resources/CloseSelected.png
 Resources/HelloWorld.png
 Resources/fonts/
 Resources/res/
+vungle-windows-sdk-*.*.*/
 
 # Ignore files build by Visual Studio
 *.obj
