@@ -73,20 +73,22 @@ Add your Vungle app id to the "id" field (currently set to "vungleTest"). The JS
 
     ```json
     {
-      "Vungle" :
-      {
-          "id":"vungleTest",
-          "ads":{
-              "video":{
-                "sound" : true
-              },
-              "reward":{
-                 "sound" : true,
-                 "incentivized" : true
-              }
+      "WinRT": {
+        "Vungle": {
+          "id": "vungleTest",
+          "ads": {
+            "video": {
+              "sound": true
+            },
+            "reward": {
+              "sound": true,
+              "incentivized": true
+            }
           }
+        }
       }
     }
+
     ```
 
 
